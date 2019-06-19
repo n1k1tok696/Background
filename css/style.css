@@ -1,0 +1,51 @@
+body * {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	overflow: hidden;
+}
+
+.wrapper {
+	max-width: 100%;	
+
+}
+section.main-page {
+	min-height: 100vh;
+	background: url(../images/full.jpg) no-repeat left center; /* fixed если задать, то при прокрутке на вторую главу фон маина будет висеть неподвижно */
+	background-size: 110%;
+	background-size: cover;
+}
+
+/* section.chapter-one {
+	min-height: 100vh;
+	background: red no-repeat left center;
+	background-size: cover;
+	overflow: hidden;
+} */
+
+ @media (max-width: 700px) { 
+	section.main-page {
+	min-height: 100vh;
+	background: url(../images/half.jpg) no-repeat left center ;
+	background-size: cover;
+}
+  }
+
+@media (max-width: 700px) { 
+section.main-page {
+	min-height: 100vh;
+	background: url(../images/half.jpg) no-repeat left center ;
+	background-size: cover;
+}
+  }
+
+@media (max-width: 400px) { 
+section.main-page {
+	min-height: 100vh;
+	background: url(../images/little.jpg) no-repeat left center fixed;
+	background-size: cover;
+}
+  }
+
